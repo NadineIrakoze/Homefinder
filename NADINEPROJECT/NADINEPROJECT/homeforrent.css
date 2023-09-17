@@ -1,0 +1,83 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstpart{
+    background: rgba(3, 3, 3, 0.9)url("h.avif");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: aliceblue;
+    /* opacity: 0.7; */
+    /* height: 50rem; */
+}
+.firstpart .top{
+    height: 3rem;
+    color: azure;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+} 
+
+.firstpart .p{
+    padding-top: 10rem;
+   padding-left: 20rem;
+   font-size: large;
+   font-weight: 300;
+    
+} 
+
+.logo a{
+    color: cadetblue;
+    margin: 0 1rem 0 1rem;
+    text-decoration: none;
+}
+
+.firstpart .top .logo{
+    padding: 0rem 15rem;
+}
+
+
+.firstpart .title{
+    margin-left: 40rem;
+}
+
+.gridpart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridpart .grid{
+    height: 25rem;
+   background-color: rgb(13, 66, 48);
+   margin: 1rem;
+   padding: 0.5rem;
+   color: black;
+
+}
+
+.gridpart .grid img{
+    width: 80%;
+    height: 70%;
+    margin-left: 2rem;
+ 
+ }
+
+
+ .gridpart .grid button{
+height: 2rem;
+width: 5rem;
+border-top-right-radius: 1rem;
+border-bottom-left-radius: 1rem;
+background-color: antiquewhite;
+ }
+
+ .gridpart .grid button:hover{
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: rgb(238, 149, 32);
+    color: aliceblue;
+    border: solid 2px blue;
+     }
+

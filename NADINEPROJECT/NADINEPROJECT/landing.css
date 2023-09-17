@@ -1,0 +1,172 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: black;
+}
+.firstpart{
+    background: rgba(0,0,0,0.7)url("background image.webp");
+    background-size: cover;
+    background-blend-mode: darken;
+    color: aliceblue;
+    /* opacity: 0.7; */
+    height: 37rem;
+}
+.firstpart .top{
+    height: 3rem;
+    /* background-color: aquamarine; */
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+} 
+.firstpart .p{
+    padding-top: 10rem;
+   padding-left: 20rem;
+   font-size: large;
+   font-weight: 300;
+    
+} 
+
+.firstpart .top .logo{
+    padding: 0rem 15rem;
+}
+.firstpart .top .logo button{
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem;
+    background-color: aquamarine;
+}
+.secondpart{
+    background-color: rgb(230, 165, 86);
+    height: 19rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+}
+.secondpart .grid1{ 
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 254, 254);
+    padding: 2rem 2rem;
+    height: 15rem;
+}
+.secondpart .grid1 img{ 
+  height: 11rem;
+  width: 100%;
+}
+
+
+.secondpart .grid2{ 
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 2rem;
+    height: 15rem;
+}
+.secondpart .grid2 img{ 
+  height: 11rem;
+  width: 100%;
+}
+
+
+
+.secondpart .grid3{ 
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 2rem;
+    height: 15rem;
+}
+.secondpart .grid3 img{ 
+  height: 11rem;
+  width: 100%;
+}
+
+.other{
+    background-color: aliceblue;
+    height: 3rem;
+    /* padding-top: 1rem; */
+    padding: 1.5REM;
+}
+
+.thirdpart{
+    padding: 2rem 30rem;
+    background-color: rgb(31, 28, 26);
+    color: aliceblue;
+    height: 9rem;
+}
+.register{
+
+    background-color: rgb(212, 205, 205);
+    color: black;
+    height: 27rem;
+    width: 60%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: rgb(54, 84, 85);
+    margin: 0 1rem 0 1rem;
+    text-decoration: none;
+}
+
+.why{
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+/* for toggle */
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+    display: none;
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
